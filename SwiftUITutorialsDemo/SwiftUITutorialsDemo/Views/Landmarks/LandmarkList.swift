@@ -16,6 +16,14 @@ struct LandmarkList: View {
             (!showFavoritesOnly || landmark.isFavorite)
         }
     }
+//    var filteredLandmarks: [Landmark] {
+//        get {
+//            return landmarks.filter {
+//                landmark in let result = (!showFavoritesOnly || landmark.isFavorite)
+//                return result
+//            }
+//        }
+//    }
 
     var body: some View {
         NavigationView {

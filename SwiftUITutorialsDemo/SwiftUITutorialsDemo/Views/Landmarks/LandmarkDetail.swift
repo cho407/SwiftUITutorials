@@ -14,7 +14,15 @@ struct LandmarkDetail: View {
     var landmarkIndex: Int {
         modelData.landmarks.firstIndex(where: { $0.id == landmark.id})!
     }
-    
+//    var landmarkIndex: Int {
+//        get {
+//            //앞선 List에서 넘겨준 landmark가 전체 목록에서 몇 번째인지 알고자 하는 코드
+//             return
+//            modelData.landmarks.firstIndex(where: {
+//                $0.id == landmark.id
+//            })!
+//        }
+//    }
     
     var body: some View {
         ScrollView {
@@ -40,7 +48,6 @@ struct LandmarkDetail: View {
                         }
                         .font(.subheadline)
                         .foregroundColor(.secondary)
-
                         Divider()
 
                         Text("About \(landmark.name)")
